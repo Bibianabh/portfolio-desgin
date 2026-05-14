@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Bibiana Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        img{
+    max-width:100%;
+    height:auto;
+}
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            overflow-x:hidden;
+            background:white;
+        }
+
+        /* HOME  */
+
+        .home{
+            width:100%;
+            min-height:100vh;
+
+            background:
+            linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+            url('./images/Untitled\ design.png');
+
+            background-position:center;
+            background-size:cover;
+            background-repeat:no-repeat;
+
+            position:relative;
+        }
+
+        /* NAVBAR */
+
+        .navbar{
+            padding:25px 60px;
+        }
+
+        .navbar-nav{
+            gap:40px;
+        }
+
+        .navbar-nav .nav-link{
+            color:white !important;
+            font-size:16px;
+            font-weight:600;
+            transition:0.3s;
+            letter-spacing:1px;
+        }
+
+        .navbar-nav .nav-link:hover{
+            color:#d6d6d6 !important;
+        }
+
+        .logo{
+            color:white !important;
+            font-size:28px;
+            font-weight:600;
+            letter-spacing:2px;
+            text-decoration:none;
+        }
+
+
+        .hero-text{
+            position:absolute;
+            top:70%;
+            left:50%;
+            transform:translate(-50%, -50%);
+
+            color:white;
+
+            animation:slideUp 2s ;        }
+
+        .hero-text p{
+            font-size:22px;
+            font-weight:300;
+            letter-spacing:2px;
+            margin-bottom:10px;
+
+        }
+
+        .hero-text p{
+    font-size:22px;
+    font-weight:300;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+        .hero-text h1{
+            font-size:90px;
+            font-weight:700;
+            letter-spacing:10px;
+        }
+
+
+        @keyframes slideUp{
+
+            from{
+                opacity:0;
+                transform:translate(-50%, 80px);
+            }
+
+            to{
+                opacity:1;
+                transform:translate(-50%, -50%);
+            }
+
+        }
+
+        /* ABOUT SECTION */
+
+        .about-section{
+            padding:120px 20px;
+            background: dark brown;
+        }
+
+        .about-image{
+            width:220px;
+            height:220px;
+
+            margin:auto;
+
+            border-radius:50%;
+            padding:8px;
+
+            background:linear-gradient(135deg, #0d6efd, #7ab8ff);
+
+            animation:fadeUp 1.5s ease;
+        }
+
+        .about-image{
+    cursor:pointer;
+    transition:0.5s;
+}
+
+.about-image:hover{
+    transform:scale(1.08) rotate(5deg);
+}
+
+        .about-image img{
+            width:100%;
+            height:100%;
+
+            border-radius:50%;
+            object-fit:cover;
+
+            border:5px solid white;
+        }
+
+        .about-text{
+            margin-top:35px;
+
+            animation:fadeUp 2s ease;
+        }
+
+        .about-text h2{
+            font-size:42px;
+            font-weight:700;
+
+            color:#ffffff;
+
+            margin-bottom:20px;
+        }
+
+        .about-text p{
+            font-size:18px;
+            line-height:1.8;
+            color:#ffffff;
+        }
+
+
+
+
+
+        .skills-row{
+            margin-top:60px;
+        }
+
+        .skill-box{
+            background:white;
+
+            border:2px solid #0d6efd;
+
+            padding:18px;
+
+            text-align:center;
+
+            border-radius:15px;
+
+            font-size:18px;
+            font-weight:600;
+
+            color:#0d6efd;
+
+            transition:0.4s;
+        }
+
+        .skill-box:hover{
+            background:#0d6efd;
+            color:white;
+
+            transform:translateY(-8px);
+        }
+
+
+        @keyframes fadeUp{
+
+            from{
+                opacity:0;
+                transform:translateY(60px);
+            }
+
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+
+        }
+
+
+        @media(max-width:991px){
+
+            .navbar{
+                padding:20px;
+            }
+
+            .navbar-nav{
+                gap:10px;
+                text-align:center;
+
+                background:black;
+
+                padding:20px;
+                margin-top:15px;
+            }
+
+            .hero-text{
+                top:72%;
+                left:50%;
+                text-align:center;
+            }
+
+            .hero-text p{
+                margin-left:0;
+                font-size:18px;
+            }
+
+            .hero-text h1{
+                font-size:55px;
+                letter-spacing:5px;
+            }
+
+        }
+
+        @media(max-width:576px){
+
+            .hero-text p{
+                font-size:16px;
+            }
+
+            .hero-text h1{
+                font-size:38px;
+                letter-spacing:3px;
+            }
+
+            .about-text h2{
+                font-size:34px;
+            }
+
+            .about-text p{
+                font-size:16px;
+            }
+
+            .skill-box{
+                font-size:16px;
+            }
+
+        }
+
+        
+
+
+
+
+
+        /* SERVICES  */
+
+.services-section{
+    padding:120px 20px;
+    background:#152656;
+}
+
+.services-title h2{
+    font-size:42px;
+    font-weight:700;
+    color:#ffffff;
+
+    margin-bottom:70px;
+}
+
+.service-box{
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    height:100%;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    transition:0.4s;
+}
+
+.service-box:hover{
+    transform:translateY(-10px);
+}
+
+.service-box h3{
+    font-size:24px;
+    font-weight:600;
+
+    color:#7a5f5f;
+
+    margin-bottom:15px;
+}
+
+.service-box p{
+    font-size:16px;
+    color:#555;
+
+    line-height:1.8;
+}
+
+.services-section{
+    padding:120px 20px;
+    background: dark brown;
+}
+
+.services-title h2{
+    font-size:42px;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:70px;
+}
+
+.service-box{
+    background:white;
+    padding:35px 25px;
+    border-radius:20px;
+    text-align:center;
+    height:100%;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.service-box:hover{
+    transform:translateY(-10px);
+}
+
+.service-header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:15px;
+}
+
+.service-emoji{
+    font-size:40px;
+}
+
+.service-header h3{
+    font-size:18px;
+    font-weight:600;
+    margin:0;
+}
+
+.service-box p{
+    font-size:16px;
+    color:#555;
+    line-height:1.8;
+}
+
+@media(max-width:576px){
+
+    .services-title h2{
+        font-size:34px;
+    }
+
+    .service-header h3{
+        font-size:16px;
+    }
+
+    .service-box p{
+        font-size:15px;
+    }
+}
+
+
+
+
+
+/* WORK SECTION */
+
+.work-section{
+    padding:120px 0;
+                background: dark brown;
+    overflow:hidden;
+}
+
+.work-title h2{
+    color:white;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:60px;
+}
+
+
+.work-slider{
+    overflow:hidden;
+    width:100%;
+}
+
+.work-track{
+    display:flex;
+    gap:20px;
+    width:max-content;
+    animation:scrollLeft 20s linear infinite;
+}
+
+.work-track img{
+    width:220px;
+    height:320px;
+    object-fit:contain;
+    padding:10px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.work-track img:hover{
+    transform:scale(1.05);
+}
+
+
+@keyframes scrollLeft{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(-50%);
+    }
+}
+
+
+@media(max-width:768px){
+
+    .work-track img{
+        width:220px;
+        height:150px;
+    }
+
+}
+
+
+
+
+
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0f1726;
+    color:white;
+}
+
+
+
+.project-section{
+    padding:120px 20px;
+}
+
+
+
+#project1{
+    background:#152656;
+}
+
+#project2{
+    background:#0f1726;
+}
+
+#project3{
+    background:#152656;
+}
+
+.youtube{
+    background:#0f1726;
+}
+
+.carousel-section{
+    background:#152656;
+}
+
+.carousel-section2{
+    background:#0f1726;
+}
+
+#project5{
+    background:#152656;
+}
+
+#cover1{
+    background:#0f1726;
+}
+
+#cover2{
+    background:#152656;
+}
+
+#posterdesign{
+    background:#0f1726;
+}
+
+#project4{
+    background:#152656;
+}
+
+
+
+.project-title,
+.carousel-title,
+.insta2-title,
+.insta3-title,
+.title{
+    text-align:center;
+    font-size:42px;
+    font-weight:700;
+    color:white;
+    margin-bottom:50px;
+}
+
+.title{
+    margin-top:80px;
+}
+
+
+
+.project-images{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    flex-wrap:nowrap;
+    margin-bottom:40px;
+}
+
+.project-images img{
+    width:280px;
+    height:380px;
+    object-fit:contain;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.project-images img:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+
+
+.project-text{
+    text-align:center;
+    color:white;
+    font-size:16px;
+    line-height:1.8;
+    max-width:700px;
+    margin:auto;
+}
+
+
+
+.youtube .project-images{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:10px;
+    max-width:750px;
+    margin:0 auto 40px;
+}
+
+.youtube .project-images img{
+    width:100%;
+    max-width:350px;
+    height:240px;
+    object-fit:contain;
+    border-radius:15px;
+}
+
+.youtube .project-images img:hover{
+    transform:scale(1.05);
+}
+
+
+
+.carousel-section,
+.carousel-section2{
+    padding:120px 20px;
+    position:relative;
+    z-index:1;
+    text-align:center;
+    color:white;
+}
+
+
+
+.carousel-section::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:url("./images/1340a3bcde1c7e21736efde0a3bbf40d.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    opacity:0.1;
+    z-index:-1;
+}
+
+
+
+.carousel-box img{
+    width:900px;
+    max-width:95%;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.carousel-box img:hover{
+    transform:scale(1.03);
+}
+
+
+
+.carousel-text{
+    margin-top:25px;
+    font-size:16px;
+    line-height:1.8;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    color:#d1d5db;
+}
+
+
+
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.popup img{
+    width:60%;
+    max-width:800px;
+    border-radius:12px;
+    animation:pop 0.3s ease;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:40px;
+    color:white;
+    cursor:pointer;
+}
+
+@keyframes pop{
+    from{
+        transform:scale(0.7);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+
+
+.insta-cover-2{
+    padding:120px 20px;
+    color:white;
+    text-align:center;
+}
+
+.insta2-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.insta2-images{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:10px;
+    max-width:450px;
+}
+
+.insta2-images img{
+    width:100%;
+    height:auto;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.insta2-images img:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+.insta2-text{
+    max-width:400px;
+    text-align:left;
+}
+
+.insta2-text p{
+    font-size:16px;
+    line-height:1.8;
+    color:#d1d5db;
+}
+
+
+
+.insta-cover-3{
+    padding:120px 20px;
+    color:white;
+    text-align:center;
+}
+
+.insta3-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.insta3-text{
+    max-width:400px;
+    text-align:left;
+}
+
+.insta3-text p{
+    font-size:16px;
+    line-height:1.8;
+    color:#d1d5db;
+}
+
+.insta3-images{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:10px;
+    max-width:450px;
+}
+
+.insta3-images img{
+    width:100%;
+    height:auto;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.insta3-images img:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+
+
+.wrapper{
+    position:relative;
+    min-height:850px;
+}
+
+.block{
+    position:absolute;
+    width:90%;
+    max-width:1200px;
+    display:flex;
+    align-items:center;
+    gap:70px;
+}
+
+.block img{
+    width:100%;
+    max-width:500px;
+    border-radius:18px;
+}
+
+.block p{
+    width:100%;
+    max-width:600px;
+    margin:0;
+    font-size:18px;
+    color:#ddd;
+    line-height:1.8;
+}
+.top{
+    top:60px;
+    left:6%;
+}
+
+.bottom{
+    bottom:70px;
+    right:8%;
+    flex-direction:row-reverse;
+}
+
+
+
+.top img{
+    animation:slideLeft 5s infinite;
+}
+
+.bottom img{
+    animation:slideRight 5s infinite;
+}
+
+@keyframes slideLeft{
+    0%{
+        transform:translateX(-120px);
+        opacity:0;
+    }
+
+    20%{
+        transform:translateX(0);
+        opacity:1;
+    }
+
+    80%{
+        transform:translateX(0);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateX(-120px);
+        opacity:0;
+    }
+}
+
+@keyframes slideRight{
+    0%{
+        transform:translateX(120px);
+        opacity:0;
+    }
+
+    20%{
+        transform:translateX(0);
+        opacity:1;
+    }
+
+    80%{
+        transform:translateX(0);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateX(120px);
+        opacity:0;
+    }
+}
+
+
+
+#project4 .project-images img{
+    width:280px;
+    height:360px;
+    object-fit:contain;
+    border-radius:15px;
+    transition:0.3s ease;
+    transform:scale(1);
+    opacity:0.95;
+}
+
+#project4 .project-images img:nth-child(2){
+    transform:scale(1.05);
+    opacity:1;
+}
+
+#project4 .project-images img:hover{
+    transform:translateY(-6px) scale(1.08);
+    opacity:1;
+}
+
+
+
+@media(max-width:768px){
+
+    .project-images{
+        flex-wrap:wrap;
+    }
+
+    .project-images img{
+        width:220px;
+        height:300px;
+    }
+
+    .project-title,
+    .carousel-title,
+    .insta2-title,
+    .insta3-title,
+    .title{
+        font-size:34px;
+    }
+
+    .insta2-wrapper,
+    .insta3-wrapper{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .insta2-text,
+    .insta3-text{
+        text-align:center;
+    }
+
+    .block{
+        position:static;
+        width:100%;
+        flex-direction:column;
+        text-align:center;
+        margin-bottom:60px;
+    }
+
+    .bottom{
+        flex-direction:column;
+    }
+
+    .block img{
+        width:90%;
+    }
+
+    .block p{
+        width:90%;
+    }
+
+    .wrapper{
+        height:auto;
+    }
+}
+
+
+
+
+
+
+.contact-section{
+  position: relative;
+  padding:100px 20px;
+  color:white;
+
+  background-image: url("./images/1340a3bcde1c7e21736efde0a3bbf40d.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: rgba(11, 27, 58, 0.5);
+  background-blend-mode: overlay;
+  overflow: hidden;
+}
+
+.contact-section::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.55);
+  z-index:0;
+}
+
+.contact-title{
+  text-align:center;
+  font-size:44px;
+  font-weight:600;
+  margin-bottom:40px;
+  font-family: "Pacifico", cursive;
+
+  position: relative;
+  z-index: 2;
+}
+
+.contact-box{
+  max-width:1000px;
+  margin:auto;
+  display:flex;
+  background:#111c3a;
+  border-radius:25px;
+  overflow:hidden;
+  position:relative;
+  z-index:2;
+}
+
+.contact-box::before{
+  content:"";
+  position:absolute;
+  width:2px;
+  height:100%;
+  background:#ffffff33;
+  left:50%;
+  top:0;
+}
+
+.contact-left{
+  width:50%;
+  padding:40px;
+}
+
+.contact-left h3{
+  margin-bottom:15px;
+  font-size:22px;
+}
+
+.contact-left p{
+  margin:8px 0;
+  color:#ddd;
+}
+
+.contact-right{
+  width:50%;
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.contact-right input,
+.contact-right textarea{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+}
+
+.contact-right textarea{
+  height:100px;
+  resize:none;
+}
+
+.contact-right button{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#4a6cf7;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.contact-right button:hover{
+  background:#3654d1;
+}
+
+.contact-left a{
+  color:#4a6cf7;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.contact-left a:hover{
+  text-decoration:underline;
+}
+
+@media(max-width:768px){
+  .contact-box{
+    flex-direction:column;
+  }
+
+  .contact-box::before{
+    display:none;
+  }
+
+  .contact-left,
+  .contact-right{
+    width:100%;
+  }
+}
+
+
+
+.navbar{
+    padding:25px 60px;
+}
+
+.navbar-nav{
+    gap:35px;
+}
+
+.nav-link{
+    color:white !important;
+    font-size:17px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#d6d6d6 !important;
+}
+
+.logo{
+    color:white !important;
+    font-size:28px;
+    font-weight:600;
+}
+
+
+@media(max-width:991px){
+
+    .navbar{
+        padding:20px;
+    }
+
+    .navbar-collapse{
+        background:#000;
+        padding:20px;
+        margin-top:15px;
+        border-radius:15px;
+        text-align:center;
+    }
+
+    .navbar-nav{
+        gap:15px;
+    }
+
+    .nav-link{
+        font-size:18px;
+    }
+}
+
+
+
+#topBtn{
+    position:fixed;
+
+    bottom:30px;
+    right:30px;
+
+    width:55px;
+    height:55px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#4a6cf7;
+    color:white;
+
+    font-size:24px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+
+    transition:0.3s ease;
+
+    z-index:999;
+}
+
+#topBtn:hover{
+    transform:translateY(-5px) scale(1.08);
+    background:#3654d1;
+}
+
+
+@media(max-width:768px){
+
+    #topBtn{
+
+        width:45px;
+        height:45px;
+
+        font-size:20px;
+
+        bottom:20px;
+        right:20px;
+    }
+
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HOME SECTION -->
+
+    <section class="home" id="home">
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <div class="container-fluid">
+
+            <!-- LOGO -->
+
+            <a class="navbar-brand logo" href="#">
+                Bibiana
+            </a>
+
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">My Work</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO TEXT -->
+
+    <div class="hero-text">
+
+        <p>Hola, my name is</p>
+
+        <h1>BIBIANA</h1>
+
+    </div>
+
+</section>
+
+
+
+
+
+    <!-- ABOUT SECTION -->
+
+<section class="about-section" id="about">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8 text-center">
+
+                    <!-- IMAGE -->
+
+                    <div class="about-image">
+
+                        <img src="./images/Untitled design.png" alt="Bibiana">
+
+                    </div>
+
+
+                    <div class="about-text">
+
+                        <h2>About Me</h2>
+
+                        <p>
+                            I am a visual designer who sees every design as a story waiting to be told.
+                            For me, design is not just about colors and shapes — it is a visual language that reveals the soul of a brand.
+                            With hands-on experience in branding, poster creation, and creative visual design, I bring a balance of emotion and functionality to every project.
+    
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            
+
+            <!-- SKILLS -->
+
+            <div class="row skills-row">
+
+                <div class="col-md-3 col-6 mb-4">
+
+                    <div class="skill-box">
+                        Adobe Photoshop
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-6 mb-4">
+
+                    <div class="skill-box">
+                        Adobe Illustrator
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-6 mb-4">
+
+                    <div class="skill-box">
+                        Canva
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-6 mb-4">
+
+    <div class="skill-box">
+        Adobe InDesign
+    </div>
+
+</div>
+
+<div class="col-md-3 col-6 mb-4">
+
+    <div class="skill-box">
+        Figma
+    </div>
+
+</div>
+
+<div class="col-md-3 col-6 mb-4">
+
+    <div class="skill-box">
+        Adobe Premiere
+    </div>
+
+</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+           <!-- MY SERVICES SECTION -->
+
+<section class="services-section">
+
+    <div class="container">
+
+        <div class="services-title text-center">
+            <h2>My Services</h2>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-box">
+
+                    <div class="service-header">
+                        <span class="service-emoji">💻</span>
+                        <h3>Web & UI Design</h3>
+                    </div>
+
+                    <p>Clean, modern and responsive website layouts focused on user experience and visual appeal.</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-box">
+
+                    <div class="service-header">
+                        <span class="service-emoji">🎨</span>
+                        <h3>Graphic Design</h3>
+                    </div>
+
+                    <p>Creative and professional graphic designs for social media, branding and promotions.</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-box">
+
+                    <div class="service-header">
+                        <span class="service-emoji">✏️</span>
+                        <h3>Logo Design</h3>
+                    </div>
+
+                    <p>Unique logo concepts that represent your brand identity with a modern touch.</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-box">
+
+                    <div class="service-header">
+                        <span class="service-emoji">🎬</span>
+                        <h3>Video Editing</h3>
+                    </div>
+
+                    <p>Professional editing for reels, promotional videos and social media content.</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-box">
+
+                    <div class="service-header">
+                        <span class="service-emoji">📱</span>
+                        <h3>Social Media Design</h3>
+                    </div>
+
+                    <p>Eye-catching Instagram posts, banners and creative content designs.</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-box">
+
+                    <div class="service-header">
+                        <span class="service-emoji">🌟</span>
+                        <h3>Brand Identity</h3>
+                    </div>
+
+                    <p>Professional visual identity solutions to make your brand look strong and modern.</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-box">
+
+                    <div class="service-header">
+                        <span class="service-emoji">🖌️</span>
+                        <h3>Typography Design</h3>
+                    </div>
+
+                    <p>Creative typography styles and modern text-based visual designs for branding projects.</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-box">
+
+                    <div class="service-header">
+                        <span class="service-emoji">📸</span>
+                        <h3>Portfolio Design</h3>
+                    </div>
+
+                    <p>Professional portfolio layouts designed to showcase creativity and projects beautifully.</p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- MY BEST WORK SECTION -->
+
+<section class="work-section" id="work">
+
+    <div class="container">
+
+        <div class="text-center work-title">
+            <h2>My Best Work</h2>
+        </div>
+
+        <div class="work-slider">
+
+            <div class="work-track">
+
+                <img src="./images/SARVESHWAR.jpg" alt="">
+                <img src="./images/pagani 2.jpg" alt="">
+                <img src="./images/921836b1-fc69-42a5-8cb5-5df782f8b27a.jpg" alt="">
+                <img src="./images/jwellery.jpg" alt="">
+                <img src="./images/2 poster.jpg" alt="">
+                <img src="./images/Untitled-2.jpg" alt="">
+
+                <img src="./images/SARVESHWAR.jpg" alt="">
+                <img src="./images/pagani 2.jpg" alt="">
+                <img src="./images/921836b1-fc69-42a5-8cb5-5df782f8b27a.jpg" alt="">
+                <img src="./images/jwellery.jpg" alt="">
+                <img src="./images/2 poster.jpg" alt="">
+                <img src="./images/Untitled-2.jpg" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="project1" class="project-section">
+
+  <div class="container">
+
+    <h2 class="project-title">Instagram Poster 1</h2>
+
+    <div class="project-images">
+
+      <img src="./images/Mojito poster - instagram post 4.jpg" alt="">
+      <img src="./images/juice poster.jpg" alt="">
+      <img src="./images/pancakes  poster - instagram post 3.jpg" alt="">
+
+    </div>
+
+    <p class="project-text">
+      This project represents my creative design work focused on branding and visual storytelling.
+      Each piece reflects my approach to clean, meaningful and impactful design.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section id="project2" class="project-section">
+
+  <div class="container">
+
+    <h2 class="project-title">Poster Design 1</h2>
+
+    <div class="project-images">
+
+      <img src="./images/POSTER.jpg" alt="">
+      <img src="./images/2 poster.jpg" alt="">
+      <img src="./images/jwellery.jpg" alt="">
+
+    </div>
+
+    <p class="project-text">
+      These poster designs are created for marketing and branding purposes, focusing on strong visuals, typography and modern layout style.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section id="project3" class="project-section">
+
+  <div class="container">
+
+    <h2 class="project-title">Social Media Design</h2>
+
+    <div class="project-images">
+
+      <img src="./images/brand of skin.jpg" alt="">
+      <img src="./images/Instagram ka cover page ( bella vita).jpg" alt="">
+      <img src="./images/Final instagram cover page 4- Pilgrim.jpg" alt="">
+
+    </div>
+
+    <p class="project-text">
+      These social media designs are created to enhance brand presence, engagement and visual storytelling across digital platforms.
+    </p>
+
+  </div>
+
+</section>
+
+<section class="project-section youtube">
+
+  <div class="container">
+
+    <h2 class="project-title">YouTube Thumbnails</h2>
+
+    <div class="project-images">
+
+     <img src="./images/Thumbnail 2.jpg" alt="">
+    <img src="./images/Thumbnail 1.jpg" alt="">
+    <img src="./images/thumbnail 4.jpg" alt="">
+    <img src="./images/thumbnail 3.jpg" alt="">
+
+
+    </div>
+
+    <p class="project-text">
+      These YouTube thumbnails are designed to attract attention, improve clicks, and clearly communicate video content in a bold visual style.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<section class="carousel-section">
+
+  <div class="container">
+
+    <h2 class="carousel-title">Carousel Design 1</h2>
+
+    <div class="carousel-box">
+      <img id="mainImage" src="./images/carousel  1 DONE.jpg" alt="work image">
+    </div>
+
+    <!-- TEXT -->
+    <p class="carousel-text">
+      Created aesthetic carousel designs inspired by Yankee Candle, focusing on warmth, mood, 
+      and premium visual appeal to reflect the brand's identity.
+    </p>
+
+  </div>
+
+</section>
+
+<div class="popup" id="popup">
+  <span class="close" onclick="closePopup()">×</span>
+  <img id="popupImg" src="">
+</div>
+
+
+<section class="carousel-section2">
+
+  <div class="container">
+
+    <h2 class="carousel-title">Carousel Design 2</h2>
+
+    <div class="carousel-box">
+      <img src="./images/carousel 2 dot and key.jpg" alt="Carousel Design 2" onclick="openPopup(this.src)">
+    </div>
+
+    <!-- TEXT -->
+    <p class="carousel-text">
+      Designed engaging carousel posts for Dot & Key, focusing on a fresh, clean, and modern visual style.
+    The aim was to enhance product appeal while maintaining strong brand aesthetics for social media marketing.
+    </p>
+
+  </div>
+
+</section>
+
+<div class="popup" id="popup">
+  <span class="close" onclick="closePopup()">×</span>
+  <img id="popupImg" src="">
+</div>
+
+
+
+<section id="project5" class="project-section"> 
+
+    <h2 class="project-title">Instagram Poster 2</h2>
+
+    <div class="project-images">
+
+      <img src="./images/Reebok shoe.jpg" alt="">
+    <img src="./images/coco scrub.jpg" alt="">
+    <img src="./images/921836b1-fc69-42a5-8cb5-5df782f8b27a.jpg" alt="">
+    </div>
+
+    <p class="project-text">
+      This project represents my creative design work focused on branding and visual storytelling.
+      Each piece reflects my approach to clean, meaningful and impactful design.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section id="cover1" class="insta-cover-2">
+
+    <h2 class="insta2-title">Instagram Cover Page 1</h2>
+
+    <div class="insta2-wrapper">
+
+        <div class="insta2-images">
+
+        <img src="./images/Artboard 1.jpg" alt="">
+        <img src="./images/Artboard 2.jpg" alt="">
+        <img src="./images/Artboard 7.jpg" alt="">
+        <img src="./images/Artboard 8.jpg" alt="">
+
+        </div>
+
+        <div class="insta2-text">
+
+            <p>
+                These designs focus on modern branding, clean composition,
+                and strong visual identity for social media platforms.
+                Each layout is created to attract attention and maintain consistency.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="cover2" class="insta-cover-3">
+
+    <h2 class="insta3-title">Instagram Cover Page 2</h2>
+
+    <div class="insta3-wrapper">
+
+        <div class="insta3-text">
+
+            <p>
+                These social media designs focus on clean branding,
+                visual storytelling, and modern aesthetic layouts.
+                Each piece is crafted to improve engagement and identity.
+            </p>
+
+        </div>
+
+        <div class="insta3-images">
+
+        <img src="./images/Artboard 5.jpg" alt="">
+        <img src="./images/Artboard 6.jpg" alt="">
+        <img src="./images/Artboard 4.jpg" alt="">
+        <img src="./images/Artboard 3.jpg" alt="">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="posterdesign" class="slide3">
+
+  <h2 class="title">Advertisement Poster</h2>
+
+  <div class="wrapper">
+
+    <div class="block top">
+
+      <img src="./images/car.jpg" alt="">
+
+      <p>
+        This car advertisement poster was created with a cinematic and energetic design approach to showcase speed, luxury, and modern lifestyle.
+        The dramatic background, glowing road effects, and bold typography enhance the premium look of the vehicle while creating a powerful visual impact.
+        The poster was designed to capture audience attention quickly and promote the brand in a stylish and professional way.
+      </p>
+
+    </div>
+
+    <div class="block bottom">
+
+      <img src="./images/Untitled-1.jpg" alt="">
+
+      <p>
+        This luxury watch advertisement poster was designed with a modern and elegant visual style to highlight sophistication and premium branding.
+        The dark cinematic background, balanced typography, and centered product placement create a strong luxury feel while keeping the focus on the watch.
+        The design combines minimal aesthetics with bold product presentation to attract attention and create a high-end brand identity.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="project4" class="project-section">
+
+  <div class="container">
+
+    <h2 class="project-title">Instagram Poster 3</h2>
+
+    <div class="project-images">
+
+      <img src="./images/Pistachio ice cream poster.jpg" alt="">
+      <img src="./images/pagani 2.jpg" alt="">
+      <img src="./images/Final instagraam cover page 1 - coconut skincare.jpg" alt="">
+
+    </div>
+
+    <p class="project-text">
+      This project explores carousel-style visual hierarchy using scale, spacing and focus effects to highlight the central design.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="contact-section" id="contact">
+
+  <h2 class="contact-title">Contact Me</h2>
+
+  <div class="contact-box">
+
+    <div class="contact-left">
+
+      <h3>Contact Info</h3>
+
+      <p>📞 Phone: +91 9554061168</p>
+      <p>💬 WhatsApp: +973 38370404</p>
+      <p>📧 Email: bassonsherbera@gmail.com</p>
+
+      <h3 style="margin-top:30px;">Social Media</h3>
+
+      <p>
+  🔗 LinkedIn: 
+  <a href="https://www.linkedin.com/in/bibiana-b-28124a262/?skipRedirect=true" target="_blank">
+    View Profile
+  </a>
+</p>
+
+<p>
+  🎨 Behance: 
+  <a href="https://www.behance.net/gallery/247808551/Bibiana-Bassons" target="_blank">
+    View Profile
+  </a>
+</p>
+    </div>
+
+    <div class="contact-right">
+
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name">
+      <input type="text" placeholder="Contact Number">
+      <textarea placeholder="Message"></textarea>
+
+      <button>Send</button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <button id="topBtn" onclick="scrollToTop()">
+    ↑
+</button>
+
+<script>
+
+    function scrollToTop(){
+
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+
+    }
+
+</script>
+</body>
+</html>
